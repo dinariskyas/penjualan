@@ -6,7 +6,7 @@
     <data>
         <variable
             name="penjualan"
-            type="com.example.penjualan.models.Penjualan" />
+            type="com.example.penjualan.viewmodels.BlankViewFragmentMain" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -39,7 +39,7 @@
                     android:id="@+id/edtIdPembeli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     android:ems="10"
                     android:inputType="number"
                     android:textColorHint="#000000"
@@ -61,7 +61,7 @@
                     android:id="@+id/edtNamaPembeli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:textColorHint="#000000"
@@ -83,7 +83,7 @@
                     android:id="@+id/edtJudulBuku"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:textColorHint="#000000"
@@ -105,7 +105,7 @@
                     android:id="@+id/edtJumlahBeli"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     android:ems="10"
                     android:inputType="number"
                     android:textColorHint="#000000"
@@ -127,7 +127,7 @@
                     android:id="@+id/edtHarga"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="8dp"
                     android:ems="10"
                     android:inputType="number"
                     android:textColorHint="#000000"
@@ -135,14 +135,24 @@
                     app:layout_constraintTop_toBottomOf="@+id/harga" />
 
                 <Button
-                    android:id="@+id/btnProses"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="35dp"
-                    android:text="PROSES"
+                    android:layout_marginTop="32dp"
+                    android:text="CLEAR"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/edtHarga" />
+
+                <Button
+                    android:id="@+id/btnProses"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="PROSES"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnClear" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

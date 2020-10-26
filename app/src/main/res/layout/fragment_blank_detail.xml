@@ -8,6 +8,9 @@
             name="penjualan"
             type="com.example.penjualan.models.Penjualan" />
 
+        <variable
+            name="penjualanViewModel"
+            type="com.example.penjualan.viewmodels.BlankViewFragmentMain" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -44,6 +47,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:text="ID Pembeli"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/txtIdPembeli"
@@ -54,10 +59,15 @@
                     android:id="@+id/txtIdPembeli"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="20dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:ems="10"
                     android:text="@{penjualan.idPembeli}"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/idpembeli"
                     app:layout_constraintTop_toBottomOf="@+id/textView0" />
 
@@ -68,6 +78,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:text="Nama Pembeli"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/txtNamaPembeli"
@@ -78,10 +90,15 @@
                     android:id="@+id/txtNamaPembeli"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:ems="10"
                     android:text="@{penjualan.namaPembeli}"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/namapembeli"
                     app:layout_constraintTop_toBottomOf="@+id/txtIdPembeli" />
 
@@ -92,6 +109,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:text="Judul Buku"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/txtJudulBuku"
@@ -102,10 +121,15 @@
                     android:id="@+id/txtJudulBuku"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:ems="10"
                     android:text="@{penjualan.judulBuku}"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/judulBuku"
                     app:layout_constraintTop_toBottomOf="@+id/txtNamaPembeli" />
 
@@ -116,6 +140,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:text="Jumlah Beli"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/txtJumlahBeli"
@@ -126,10 +152,15 @@
                     android:id="@+id/txtJumlahBeli"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:ems="10"
                     android:text="@{penjualan.jumlahBuku}"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/jumlahBeli"
                     app:layout_constraintTop_toBottomOf="@+id/txtJudulBuku" />
 
@@ -140,6 +171,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:text="Harga"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/txtHarga"
@@ -150,10 +183,15 @@
                     android:id="@+id/txtHarga"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:ems="10"
                     android:text="@{penjualan.harga}"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/harga"
                     app:layout_constraintTop_toBottomOf="@+id/txtJumlahBeli" />
 
@@ -164,6 +202,8 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:text="Total Harga"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toStartOf="@+id/txtTotalHarga"
@@ -174,10 +214,15 @@
                     android:id="@+id/txtTotalHarga"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
                     android:ems="10"
-                    android:text=""
+                    android:text="@{penjualanViewModel.totalHargaMutableLiveData.toString()}"
                     android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/totalharga"
                     app:layout_constraintTop_toBottomOf="@+id/txtHarga" />
 
