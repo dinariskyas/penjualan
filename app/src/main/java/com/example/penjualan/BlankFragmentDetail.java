@@ -23,9 +23,9 @@ public class BlankFragmentDetail extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_blank_detail,container,false);
-//        Penjualan penjualan = requireArguments().getParcelable("penjualan");
+        Penjualan penjualan = requireArguments().getParcelable("penjualan");
         mViewModels = new ViewModelProvider(this).get(BlankViewFragmentMain.class);
-//        binding.setPenjualan(penjualan);
+        binding.setPenjualan(penjualan);
         binding.setPenjualanViewModel(mViewModels);
         binding.setLifecycleOwner(this);
 //        mViewModels.idPembeliMutableLiveData(Integer.parseInt(binding.getPenjualan().getIdPembeli());
